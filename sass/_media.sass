@@ -1,0 +1,355 @@
+@media (max-width: 1200px)
+	.menu
+		gap: 10px
+		&_item
+			padding-right: 10px
+	
+	.promo
+		&_header
+			font-size: 50px
+		&_subheader
+			font-size: 32px
+
+	.prime
+		&_block
+			width: 450px
+			&_desc
+				width: 310px
+
+	.possibl
+		&_block
+			width: 300px
+
+	.cond
+		&_row
+			&_block
+				font-size: 15px
+
+	.city
+		height: 550px
+
+@media (max-width: 991px)
+	.menu
+		gap: 5px
+		&_link
+			font-size: 10px
+		&_item
+			padding-right: 5px
+
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_official
+			font-size: 11px
+		&_number
+			font-size: 20px
+		&_btn
+			width: 100%
+			height: 40px
+			margin-top: 22px
+
+	.promo
+		&_header
+			font-size: 48px
+		&_subheader
+			font-size: 28px
+		&_desc
+			font-size: 14px
+
+	.prime
+		&_block
+			flex-direction: column
+			justify-content: start
+			width: 330px
+			&_desc
+				width: 330px
+				font-size: 14px
+				.blue_span
+					font-size: 16px
+
+	.possibl
+		&_block
+			width: 200px
+			height: 200px
+			padding-top: 55px
+		&_desc
+			font-size: 14px
+		&_icon
+			width: 25px
+			height: 25px
+			&::after
+				height: 12px
+			&::before
+				width: 12px
+
+	.choice
+		&_img
+			img
+				width: 100%
+	.cond
+		&_row
+			&_block
+				font-size: 15px
+
+	.city
+		height: 550px
+
+	.footer
+		width: auto
+		&_wrapper > div
+			width: auto
+		&_social
+			margin: 30px 0 0 10px
+		&_info
+			width: 310px
+			font-size: 10px
+		&_mobile
+			width: 158px
+			margin: 6px 0 0 10px
+			align-items: center
+			flex-direction: column
+
+
+
+	.footer
+	&_wrapper > div
+		width: none
+	&_social
+		display: flex
+		margin: 30px 0 0 20px
+		gap: 6px
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 35px
+			height: 35px
+			border-radius: 100%
+			background-color: #070716
+			color: #ffffff
+			&:hover
+				background-color: #2f2f2f
+				color: #C0EEFF
+				transition: 0.5s		
+	&_info
+		max-width: 390px
+		margin: 30px auto 0 auto
+		padding: 0
+		line-height: 20px
+		font-size: 11px
+		text-transform: uppercase
+		color: #070716
+		&_main
+			display: flex
+			justify-content: space-around
+			font-size: 15px
+		&_sub
+			margin-top: 6px
+			display: flex
+			justify-content: space-between
+			color: #999999
+		&_lang
+			margin-top: 6px
+			text-align: center
+			color: #1FBAD6
+	&_mobile
+		display: flex
+		justify-content: end
+		margin: 30px 20px 0 0
+		gap: 6px
+
+@media (max-width: 767px)
+	nav
+		position: fixed
+		height: 50px
+		width: 100%
+		right: 0
+		top: 0
+		z-index: 100
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: flex-end
+		gap: 0
+		top: 0
+		right: -100%
+		width: 300px
+		height: 245px
+		padding: 20px 15px
+		background-color: rgba(0,0,0, 0.8)
+		transition: 0.6s all
+		&_active
+			right: 0
+		&_item
+			padding-right: 0
+			border: none
+		&_link
+			font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 25px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: white
+			margin-bottom: 2px
+			transition: 0.3s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+	.subheader
+		margin-top: 0
+		&_number
+			display: block
+			margin-top: 10px
+			font-size: 18px
+			text-align: center
+		&_btn
+			display: block
+			width: 200px
+			height: 40px
+			margin: 10px auto 0 auto
+	.promo
+		margin-top: 50px
+		&_header
+			font-size: 36px
+		&_subheader
+			font-size: 22px
+	.prime
+		&_h2
+			font-size: 26px
+			margin-top: 10px
+		&_block
+			width: 100%
+			&_desc
+				width: 100%
+	.possibl
+		&_h2
+			font-size: 26px
+			margin-top: 10px
+		&_row
+			justify-content: space-around
+		&_block
+			width: 225px
+	.choice
+		height: 700px
+		padding-top: 20px
+		&_h2
+			font-size: 26px
+			margin-top: 10px
+	.footer
+		&_wrapper
+			flex-direction: column
+		&_social
+			justify-content: center
+		&_mobile
+			width: auto
+			flex-direction: row
+			justify-content: center
+			margin: 0
+			margin-top: 10px
+
+@media (max-width: 575px)
+	.container
+		width: auto
+	.menu
+		width: 100%
+	.subheader
+		height: 60px
+		&_number
+			font-size: 12px
+			text-transform: uppercase
+		&_official
+			display: none
+		&_btn
+			margin-top: 5px
+			width: 110px
+			height: 20px
+			font-size: 10px
+	.promo
+		min-height: 400px
+		
+		padding: 115px 0 35px
+		&_header
+			font-size: 30px
+			line-height: normal
+		&_subheader
+			margin-top: 20px
+			font-size: 20px
+			line-height: normal
+		&_desc
+			display: none
+		&_btn
+			margin-top: 70px
+			width: 210px
+			height: 50px
+			font-size: 16px
+	.prime
+		&_h2
+			font-size: 18px
+			margin-top: 15px
+			line-height: normal
+		&_block
+			&_img
+				height: 90px
+				width: 90px
+				img
+					height: 50px
+					
+			&_desc
+				font-size: 12px
+				.blue_span
+					font-size: 14px
+	.possibl
+		&_h2
+			font-size: 18px
+	.choice
+		height: 600px
+		&_h2
+			font-size: 18px
+	.cond
+		padding: 0 0 50px 0
+		&_h2
+			font-size: 18px
+		&_row
+			.red
+				margin-top: 15px
+			&_block
+				font-size: 12px
+				margin-top: 15px
+				line-height: 
+				&_name
+					font-size: 14px
+				&_list
+					margin-top: 5px
+				li
+					margin: 0
+	.city
+		height: 350px
+		&_h2
+			font-size: 18px
+		&_href
+			font-size: 12px
+
+
+					
+					
+					
+
